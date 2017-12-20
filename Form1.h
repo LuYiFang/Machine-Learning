@@ -1181,7 +1181,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->groupBox4->SuspendLayout();
 			this->groupBox5->SuspendLayout();
 			this->groupBox6->SuspendLayout();
@@ -1204,8 +1204,10 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {this->fileToolStripMenuItem, 
-				this->imageToolStripMenuItem, this->dataEditToolStripMenuItem, this->applicationsToolStripMenuItem, this->aboutToolStripMenuItem});
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
+				this->fileToolStripMenuItem,
+					this->imageToolStripMenuItem, this->dataEditToolStripMenuItem, this->applicationsToolStripMenuItem, this->aboutToolStripMenuItem
+			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
@@ -1215,147 +1217,153 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// 
 			// fileToolStripMenuItem
 			// 
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {this->openToolStripMenuItem, 
-				this->saveToolStripMenuItem, this->saveAsToolStripMenuItem, this->exitToolStripMenuItem, this->newFileToolStripMenuItem});
-			this->fileToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
+				this->openToolStripMenuItem,
+					this->saveToolStripMenuItem, this->saveAsToolStripMenuItem, this->exitToolStripMenuItem, this->newFileToolStripMenuItem
+			});
+			this->fileToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
-			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
+			this->fileToolStripMenuItem->Size = System::Drawing::Size(38, 20);
 			this->fileToolStripMenuItem->Text = L"File";
 			// 
 			// openToolStripMenuItem
 			// 
 			this->openToolStripMenuItem->Name = L"openToolStripMenuItem";
-			this->openToolStripMenuItem->Size = System::Drawing::Size(119, 22);
+			this->openToolStripMenuItem->Size = System::Drawing::Size(121, 22);
 			this->openToolStripMenuItem->Text = L"Open";
 			this->openToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::openToolStripMenuItem_Click);
 			// 
 			// saveToolStripMenuItem
 			// 
 			this->saveToolStripMenuItem->Name = L"saveToolStripMenuItem";
-			this->saveToolStripMenuItem->Size = System::Drawing::Size(119, 22);
+			this->saveToolStripMenuItem->Size = System::Drawing::Size(121, 22);
 			this->saveToolStripMenuItem->Text = L"Save";
 			this->saveToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::saveToolStripMenuItem_Click);
 			// 
 			// saveAsToolStripMenuItem
 			// 
 			this->saveAsToolStripMenuItem->Name = L"saveAsToolStripMenuItem";
-			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(119, 22);
+			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(121, 22);
 			this->saveAsToolStripMenuItem->Text = L"Save as";
 			this->saveAsToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::saveAsToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(119, 22);
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(121, 22);
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::exitToolStripMenuItem_Click);
 			// 
 			// newFileToolStripMenuItem
 			// 
 			this->newFileToolStripMenuItem->Name = L"newFileToolStripMenuItem";
-			this->newFileToolStripMenuItem->Size = System::Drawing::Size(119, 22);
+			this->newFileToolStripMenuItem->Size = System::Drawing::Size(121, 22);
 			this->newFileToolStripMenuItem->Text = L"New File";
 			// 
 			// imageToolStripMenuItem
 			// 
-			this->imageToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {this->clearImageToolStripMenuItem, 
-				this->showResultToolStripMenuItem, this->showContourToolStripMenuItem, this->showMeansToolStripMenuItem, this->showRegressionToolStripMenuItem, 
-				this->showClusteredToolStripMenuItem, this->showClusterCenterToolStripMenuItem});
-			this->imageToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->imageToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {
+				this->clearImageToolStripMenuItem,
+					this->showResultToolStripMenuItem, this->showContourToolStripMenuItem, this->showMeansToolStripMenuItem, this->showRegressionToolStripMenuItem,
+					this->showClusteredToolStripMenuItem, this->showClusterCenterToolStripMenuItem
+			});
+			this->imageToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->imageToolStripMenuItem->Name = L"imageToolStripMenuItem";
-			this->imageToolStripMenuItem->Size = System::Drawing::Size(51, 20);
+			this->imageToolStripMenuItem->Size = System::Drawing::Size(53, 20);
 			this->imageToolStripMenuItem->Text = L"Image";
 			this->imageToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::imageToolStripMenuItem_Click);
 			// 
 			// clearImageToolStripMenuItem
 			// 
 			this->clearImageToolStripMenuItem->Name = L"clearImageToolStripMenuItem";
-			this->clearImageToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->clearImageToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->clearImageToolStripMenuItem->Text = L"Clear Image";
 			this->clearImageToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::clearImageToolStripMenuItem_Click);
 			// 
 			// showResultToolStripMenuItem
 			// 
 			this->showResultToolStripMenuItem->Name = L"showResultToolStripMenuItem";
-			this->showResultToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->showResultToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->showResultToolStripMenuItem->Text = L"Show Result";
 			this->showResultToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showResultToolStripMenuItem_Click);
 			// 
 			// showContourToolStripMenuItem
 			// 
 			this->showContourToolStripMenuItem->Name = L"showContourToolStripMenuItem";
-			this->showContourToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->showContourToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->showContourToolStripMenuItem->Text = L"Show Contour";
 			this->showContourToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showContourToolStripMenuItem_Click);
 			// 
 			// showMeansToolStripMenuItem
 			// 
 			this->showMeansToolStripMenuItem->Name = L"showMeansToolStripMenuItem";
-			this->showMeansToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->showMeansToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->showMeansToolStripMenuItem->Text = L"Show Means";
 			this->showMeansToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showMeansToolStripMenuItem_Click);
 			// 
 			// showRegressionToolStripMenuItem
 			// 
 			this->showRegressionToolStripMenuItem->Name = L"showRegressionToolStripMenuItem";
-			this->showRegressionToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->showRegressionToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->showRegressionToolStripMenuItem->Text = L"Show Regression";
 			this->showRegressionToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showRegressionToolStripMenuItem_Click);
 			// 
 			// showClusteredToolStripMenuItem
 			// 
 			this->showClusteredToolStripMenuItem->Name = L"showClusteredToolStripMenuItem";
-			this->showClusteredToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->showClusteredToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->showClusteredToolStripMenuItem->Text = L"Show Clustered";
 			this->showClusteredToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showClusteredToolStripMenuItem_Click);
 			// 
 			// showClusterCenterToolStripMenuItem
 			// 
 			this->showClusterCenterToolStripMenuItem->Name = L"showClusterCenterToolStripMenuItem";
-			this->showClusterCenterToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->showClusterCenterToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->showClusterCenterToolStripMenuItem->Text = L"Show Cluster Center";
 			this->showClusterCenterToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showClusterCenterToolStripMenuItem_Click);
 			// 
 			// dataEditToolStripMenuItem
 			// 
-			this->dataEditToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->showDataToolStripMenuItem});
-			this->dataEditToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->dataEditToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->showDataToolStripMenuItem });
+			this->dataEditToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->dataEditToolStripMenuItem->Name = L"dataEditToolStripMenuItem";
-			this->dataEditToolStripMenuItem->Size = System::Drawing::Size(63, 20);
+			this->dataEditToolStripMenuItem->Size = System::Drawing::Size(64, 20);
 			this->dataEditToolStripMenuItem->Text = L"DataEdit";
 			this->dataEditToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::dataEditToolStripMenuItem_Click);
 			// 
 			// showDataToolStripMenuItem
 			// 
 			this->showDataToolStripMenuItem->Name = L"showDataToolStripMenuItem";
-			this->showDataToolStripMenuItem->Size = System::Drawing::Size(130, 22);
+			this->showDataToolStripMenuItem->Size = System::Drawing::Size(132, 22);
 			this->showDataToolStripMenuItem->Text = L"Show Data";
 			this->showDataToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::showDataToolStripMenuItem_Click);
 			// 
 			// applicationsToolStripMenuItem
 			// 
-			this->applicationsToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, 
+			this->applicationsToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->applicationsToolStripMenuItem->Name = L"applicationsToolStripMenuItem";
-			this->applicationsToolStripMenuItem->Size = System::Drawing::Size(85, 20);
+			this->applicationsToolStripMenuItem->Size = System::Drawing::Size(86, 20);
 			this->applicationsToolStripMenuItem->Text = L"Applications";
 			// 
 			// aboutToolStripMenuItem
 			// 
-			this->aboutToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->aboutToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
-			this->aboutToolStripMenuItem->Size = System::Drawing::Size(52, 20);
+			this->aboutToolStripMenuItem->Size = System::Drawing::Size(53, 20);
 			this->aboutToolStripMenuItem->Text = L"About";
 			// 
 			// toolStrip1
 			// 
-			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(13) {this->toolStripButton1, 
-				this->toolStripButton2, this->toolStripButton3, this->toolStripButton4, this->toolStripButton5, this->toolStripButton6, this->toolStripButton7, 
-				this->toolStripButton8, this->toolStripButton9, this->toolStripButton10, this->toolStripButton11, this->toolStripButton12, this->toolStripButton13});
+			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(13) {
+				this->toolStripButton1,
+					this->toolStripButton2, this->toolStripButton3, this->toolStripButton4, this->toolStripButton5, this->toolStripButton6, this->toolStripButton7,
+					this->toolStripButton8, this->toolStripButton9, this->toolStripButton10, this->toolStripButton11, this->toolStripButton12, this->toolStripButton13
+			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 24);
 			this->toolStrip1->Name = L"toolStrip1";
 			this->toolStrip1->Size = System::Drawing::Size(1194, 25);
@@ -1365,9 +1373,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton1
 			// 
 			this->toolStripButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton1->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton1->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton1.Image")));
+			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton1.Image")));
 			this->toolStripButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton1->Name = L"toolStripButton1";
 			this->toolStripButton1->Size = System::Drawing::Size(23, 22);
@@ -1377,9 +1385,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton2
 			// 
 			this->toolStripButton2->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton2->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton2->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton2.Image")));
+			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton2.Image")));
 			this->toolStripButton2->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton2->Name = L"toolStripButton2";
 			this->toolStripButton2->Size = System::Drawing::Size(23, 22);
@@ -1389,9 +1397,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton3
 			// 
 			this->toolStripButton3->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton3->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton3->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton3->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton3.Image")));
+			this->toolStripButton3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton3.Image")));
 			this->toolStripButton3->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton3->Name = L"toolStripButton3";
 			this->toolStripButton3->Size = System::Drawing::Size(23, 22);
@@ -1401,9 +1409,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton4
 			// 
 			this->toolStripButton4->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton4->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton4->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton4->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton4.Image")));
+			this->toolStripButton4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton4.Image")));
 			this->toolStripButton4->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton4->Name = L"toolStripButton4";
 			this->toolStripButton4->Size = System::Drawing::Size(23, 22);
@@ -1413,9 +1421,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton5
 			// 
 			this->toolStripButton5->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton5->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton5->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton5->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton5.Image")));
+			this->toolStripButton5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton5.Image")));
 			this->toolStripButton5->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton5->Name = L"toolStripButton5";
 			this->toolStripButton5->Size = System::Drawing::Size(23, 22);
@@ -1424,9 +1432,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton6
 			// 
 			this->toolStripButton6->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton6->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton6->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton6->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton6.Image")));
+			this->toolStripButton6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton6.Image")));
 			this->toolStripButton6->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton6->Name = L"toolStripButton6";
 			this->toolStripButton6->Size = System::Drawing::Size(23, 22);
@@ -1436,9 +1444,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton7
 			// 
 			this->toolStripButton7->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton7->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton7->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton7->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton7.Image")));
+			this->toolStripButton7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton7.Image")));
 			this->toolStripButton7->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton7->Name = L"toolStripButton7";
 			this->toolStripButton7->Size = System::Drawing::Size(23, 22);
@@ -1447,9 +1455,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton8
 			// 
 			this->toolStripButton8->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton8->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton8->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton8->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton8.Image")));
+			this->toolStripButton8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton8.Image")));
 			this->toolStripButton8->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton8->Name = L"toolStripButton8";
 			this->toolStripButton8->Size = System::Drawing::Size(23, 22);
@@ -1458,9 +1466,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton9
 			// 
 			this->toolStripButton9->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton9->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton9->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton9->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton9.Image")));
+			this->toolStripButton9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton9.Image")));
 			this->toolStripButton9->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton9->Name = L"toolStripButton9";
 			this->toolStripButton9->Size = System::Drawing::Size(23, 22);
@@ -1469,9 +1477,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton10
 			// 
 			this->toolStripButton10->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton10->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton10->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton10->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton10.Image")));
+			this->toolStripButton10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton10.Image")));
 			this->toolStripButton10->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton10->Name = L"toolStripButton10";
 			this->toolStripButton10->Size = System::Drawing::Size(23, 22);
@@ -1480,9 +1488,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton11
 			// 
 			this->toolStripButton11->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton11->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton11->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton11->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton11.Image")));
+			this->toolStripButton11->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton11.Image")));
 			this->toolStripButton11->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton11->Name = L"toolStripButton11";
 			this->toolStripButton11->Size = System::Drawing::Size(23, 22);
@@ -1491,9 +1499,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton12
 			// 
 			this->toolStripButton12->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton12->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton12->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton12->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton12.Image")));
+			this->toolStripButton12->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton12.Image")));
 			this->toolStripButton12->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton12->Name = L"toolStripButton12";
 			this->toolStripButton12->Size = System::Drawing::Size(23, 22);
@@ -1502,9 +1510,9 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// toolStripButton13
 			// 
 			this->toolStripButton13->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton13->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->toolStripButton13->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->toolStripButton13->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton13.Image")));
+			this->toolStripButton13->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton13.Image")));
 			this->toolStripButton13->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton13->Name = L"toolStripButton13";
 			this->toolStripButton13->Size = System::Drawing::Size(23, 22);
@@ -1513,7 +1521,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
-			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->checkBox1->Location = System::Drawing::Point(15, 75);
 			this->checkBox1->Margin = System::Windows::Forms::Padding(3, 5, 3, 5);
@@ -1569,7 +1577,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_psize
 			// 
 			this->comboBox_psize->FormattingEnabled = true;
-			this->comboBox_psize->Items->AddRange(gcnew cli::array< System::Object^  >(3) {L"1", L"2", L"3"});
+			this->comboBox_psize->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"1", L"2", L"3" });
 			this->comboBox_psize->Location = System::Drawing::Point(17, 25);
 			this->comboBox_psize->Name = L"comboBox_psize";
 			this->comboBox_psize->Size = System::Drawing::Size(47, 25);
@@ -1659,7 +1667,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton2->Location = System::Drawing::Point(69, 25);
 			this->radioButton2->Name = L"radioButton2";
@@ -1673,7 +1681,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// 
 			this->radioButton_Single->AutoSize = true;
 			this->radioButton_Single->Checked = true;
-			this->radioButton_Single->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton_Single->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton_Single->Location = System::Drawing::Point(6, 25);
 			this->radioButton_Single->Name = L"radioButton_Single";
@@ -1699,7 +1707,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// 
 			// comboBox_CS
 			// 
-			this->comboBox_CS->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->comboBox_CS->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->comboBox_CS->FormattingEnabled = true;
 			this->comboBox_CS->Location = System::Drawing::Point(90, 51);
@@ -1712,7 +1720,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton_NC
 			// 
 			this->radioButton_NC->AutoSize = true;
-			this->radioButton_NC->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton_NC->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton_NC->Location = System::Drawing::Point(6, 82);
 			this->radioButton_NC->Name = L"radioButton_NC";
@@ -1726,7 +1734,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton_C2
 			// 
 			this->radioButton_C2->AutoSize = true;
-			this->radioButton_C2->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton_C2->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton_C2->Location = System::Drawing::Point(6, 53);
 			this->radioButton_C2->Name = L"radioButton_C2";
@@ -1740,7 +1748,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton_CS
 			// 
 			this->radioButton_CS->AutoSize = true;
-			this->radioButton_CS->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton_CS->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton_CS->Location = System::Drawing::Point(69, 25);
 			this->radioButton_CS->Name = L"radioButton_CS";
@@ -1754,7 +1762,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton_C1
 			// 
 			this->radioButton_C1->AutoSize = true;
-			this->radioButton_C1->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton_C1->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton_C1->Location = System::Drawing::Point(6, 25);
 			this->radioButton_C1->Name = L"radioButton_C1";
@@ -1801,11 +1809,11 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label6->Location = System::Drawing::Point(3, 211);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(81, 15);
+			this->label6->Size = System::Drawing::Size(82, 16);
 			this->label6->TabIndex = 24;
 			this->label6->Text = L"Rotate Angle :";
 			// 
@@ -1819,11 +1827,11 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label5->Location = System::Drawing::Point(3, 183);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(70, 15);
+			this->label5->Size = System::Drawing::Size(71, 16);
 			this->label5->TabIndex = 22;
 			this->label5->Text = L"Range of Y :";
 			// 
@@ -1837,11 +1845,11 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(3, 154);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(70, 15);
+			this->label4->Size = System::Drawing::Size(71, 16);
 			this->label4->TabIndex = 20;
 			this->label4->Text = L"Range of X :";
 			// 
@@ -1855,11 +1863,11 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->Location = System::Drawing::Point(2, 126);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(65, 15);
+			this->label3->Size = System::Drawing::Size(66, 16);
 			this->label3->TabIndex = 18;
 			this->label3->Text = L"# of Point :";
 			// 
@@ -1878,7 +1886,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton10
 			// 
 			this->radioButton10->AutoSize = true;
-			this->radioButton10->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton10->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton10->Location = System::Drawing::Point(11, 24);
 			this->radioButton10->Name = L"radioButton10";
@@ -1891,7 +1899,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// radioButton8
 			// 
 			this->radioButton8->AutoSize = true;
-			this->radioButton8->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->radioButton8->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->radioButton8->Location = System::Drawing::Point(11, 51);
 			this->radioButton8->Name = L"radioButton8";
@@ -1996,7 +2004,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_Run
 			// 
 			this->comboBox_Run->FormattingEnabled = true;
-			this->comboBox_Run->Items->AddRange(gcnew cli::array< System::Object^  >(3) {L"Classification", L"Clustering", L"Regression"});
+			this->comboBox_Run->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Classification", L"Clustering", L"Regression" });
 			this->comboBox_Run->Location = System::Drawing::Point(6, 33);
 			this->comboBox_Run->Name = L"comboBox_Run";
 			this->comboBox_Run->Size = System::Drawing::Size(121, 25);
@@ -2017,8 +2025,10 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_classify
 			// 
 			this->comboBox_classify->FormattingEnabled = true;
-			this->comboBox_classify->Items->AddRange(gcnew cli::array< System::Object^  >(7) {L"Bayes-Map", L"k-NN", L"Peroeptron", L"LVQ", 
-				L"BPNN", L"LDA", L"SVM-SMO"});
+			this->comboBox_classify->Items->AddRange(gcnew cli::array< System::Object^  >(7) {
+				L"Bayes-Map", L"k-NN", L"Perceptron", L"LVQ",
+					L"BPNN", L"LDA", L"SVM-SMO"
+			});
 			this->comboBox_classify->Location = System::Drawing::Point(6, 28);
 			this->comboBox_classify->Name = L"comboBox_classify";
 			this->comboBox_classify->Size = System::Drawing::Size(121, 25);
@@ -2049,9 +2059,11 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_clusters
 			// 
 			this->comboBox_clusters->FormattingEnabled = true;
-			this->comboBox_clusters->Items->AddRange(gcnew cli::array< System::Object^  >(30) {L"2", L"3", L"4", L"5", L"6", L"7", L"8", 
-				L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25", L"26", 
-				L"27", L"28", L"29", L"30", L"31"});
+			this->comboBox_clusters->Items->AddRange(gcnew cli::array< System::Object^  >(30) {
+				L"2", L"3", L"4", L"5", L"6", L"7", L"8",
+					L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25", L"26",
+					L"27", L"28", L"29", L"30", L"31"
+			});
 			this->comboBox_clusters->Location = System::Drawing::Point(96, 24);
 			this->comboBox_clusters->Name = L"comboBox_clusters";
 			this->comboBox_clusters->Size = System::Drawing::Size(36, 25);
@@ -2061,7 +2073,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_clustering
 			// 
 			this->comboBox_clustering->FormattingEnabled = true;
-			this->comboBox_clustering->Items->AddRange(gcnew cli::array< System::Object^  >(5) {L"k-Means", L"FCM", L"EM", L"GUCK", L"EGAC"});
+			this->comboBox_clustering->Items->AddRange(gcnew cli::array< System::Object^  >(5) { L"k-Means", L"FCM", L"EM", L"GUCK", L"EGAC" });
 			this->comboBox_clustering->Location = System::Drawing::Point(10, 24);
 			this->comboBox_clustering->Name = L"comboBox_clustering";
 			this->comboBox_clustering->Size = System::Drawing::Size(75, 25);
@@ -2093,8 +2105,10 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_NL_degree
 			// 
 			this->comboBox_NL_degree->FormattingEnabled = true;
-			this->comboBox_NL_degree->Items->AddRange(gcnew cli::array< System::Object^  >(9) {L"2", L"3", L"4", L"5", L"6", L"7", L"8", 
-				L"9", L"10"});
+			this->comboBox_NL_degree->Items->AddRange(gcnew cli::array< System::Object^  >(9) {
+				L"2", L"3", L"4", L"5", L"6", L"7", L"8",
+					L"9", L"10"
+			});
 			this->comboBox_NL_degree->Location = System::Drawing::Point(96, 24);
 			this->comboBox_NL_degree->Name = L"comboBox_NL_degree";
 			this->comboBox_NL_degree->Size = System::Drawing::Size(36, 25);
@@ -2104,8 +2118,10 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_regression
 			// 
 			this->comboBox_regression->FormattingEnabled = true;
-			this->comboBox_regression->Items->AddRange(gcnew cli::array< System::Object^  >(9) {L"Linear", L"Linear-Lin", L"Linear-Log10", 
-				L"Linear-sat(1/r)", L"Nonlinear", L"k-NN", L"Perceptron", L"Logistic", L"BPNN"});
+			this->comboBox_regression->Items->AddRange(gcnew cli::array< System::Object^  >(9) {
+				L"Linear", L"Linear-Lin", L"Linear-Log10",
+					L"Linear-sat(1/r)", L"Nonlinear", L"k-NN", L"Perceptron", L"Logistic", L"BPNN"
+			});
 			this->comboBox_regression->Location = System::Drawing::Point(10, 24);
 			this->comboBox_regression->Name = L"comboBox_regression";
 			this->comboBox_regression->Size = System::Drawing::Size(75, 25);
@@ -2225,7 +2241,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_Kmeans_Option
 			// 
 			this->comboBox_Kmeans_Option->FormattingEnabled = true;
-			this->comboBox_Kmeans_Option->Items->AddRange(gcnew cli::array< System::Object^  >(3) {L"Original", L"Furthest Point", L"k-means++"});
+			this->comboBox_Kmeans_Option->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Original", L"Furthest Point", L"k-means++" });
 			this->comboBox_Kmeans_Option->Location = System::Drawing::Point(60, 21);
 			this->comboBox_Kmeans_Option->Name = L"comboBox_Kmeans_Option";
 			this->comboBox_Kmeans_Option->Size = System::Drawing::Size(86, 25);
@@ -2318,7 +2334,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_Weight
 			// 
 			this->comboBox_Weight->FormattingEnabled = true;
-			this->comboBox_Weight->Items->AddRange(gcnew cli::array< System::Object^  >(3) {L"Average", L"1/Dist", L"RBF"});
+			this->comboBox_Weight->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Average", L"1/Dist", L"RBF" });
 			this->comboBox_Weight->Location = System::Drawing::Point(76, 56);
 			this->comboBox_Weight->Name = L"comboBox_Weight";
 			this->comboBox_Weight->Size = System::Drawing::Size(85, 25);
@@ -2328,9 +2344,11 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_kNN
 			// 
 			this->comboBox_kNN->FormattingEnabled = true;
-			this->comboBox_kNN->Items->AddRange(gcnew cli::array< System::Object^  >(30) {L"1", L"3", L"5", L"7", L"9", L"11", L"13", 
-				L"15", L"17", L"19", L"21", L"23", L"25", L"27", L"29", L"31", L"33", L"35", L"37", L"39", L"41", L"43", L"45", L"47", L"49", 
-				L"51", L"53", L"55", L"57", L"59"});
+			this->comboBox_kNN->Items->AddRange(gcnew cli::array< System::Object^  >(30) {
+				L"1", L"3", L"5", L"7", L"9", L"11", L"13",
+					L"15", L"17", L"19", L"21", L"23", L"25", L"27", L"29", L"31", L"33", L"35", L"37", L"39", L"41", L"43", L"45", L"47", L"49",
+					L"51", L"53", L"55", L"57", L"59"
+			});
 			this->comboBox_kNN->Location = System::Drawing::Point(24, 25);
 			this->comboBox_kNN->Name = L"comboBox_kNN";
 			this->comboBox_kNN->Size = System::Drawing::Size(46, 25);
@@ -2351,7 +2369,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			// comboBox_P_Function
 			// 
 			this->comboBox_P_Function->FormattingEnabled = true;
-			this->comboBox_P_Function->Items->AddRange(gcnew cli::array< System::Object^  >(4) {L"hardlims", L"linear", L"sigmoid", L"tanh()"});
+			this->comboBox_P_Function->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"hardlims", L"linear", L"sigmoid", L"tanh()" });
 			this->comboBox_P_Function->Location = System::Drawing::Point(10, 22);
 			this->comboBox_P_Function->Name = L"comboBox_P_Function";
 			this->comboBox_P_Function->Size = System::Drawing::Size(121, 25);
@@ -2553,7 +2571,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->toolStrip1);
 			this->Controls->Add(this->menuStrip1);
-			this->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Font = (gcnew System::Drawing::Font(L"Segoe UI Emoji", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->MainMenuStrip = this->menuStrip1;
 			this->Margin = System::Windows::Forms::Padding(3, 5, 3, 5);
@@ -2569,7 +2587,7 @@ private: System::Windows::Forms::TextBox^  textBox_Filename;
 			this->groupBox2->PerformLayout();
 			this->groupBox3->ResumeLayout(false);
 			this->groupBox3->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->groupBox4->ResumeLayout(false);
 			this->groupBox4->PerformLayout();
 			this->groupBox5->ResumeLayout(false);
